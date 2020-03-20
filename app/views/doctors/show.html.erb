@@ -1,4 +1,4 @@
 <h1><%= @doctor.name %></h1>
 <%= @doctor.appointment.each do |f| %>
-  <% f.patient_name %>
+  <%= f.patient_name %>
 <% end %>
