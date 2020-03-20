@@ -6,7 +6,7 @@ class Appointment < ApplicationRecord
     self.doctor = Doctor.find_or_create_by(name: name)
   end
 
-  def doctor_name
+  def doctor_id
     self.doctor ? self.doctor.name : nil
   end
 
