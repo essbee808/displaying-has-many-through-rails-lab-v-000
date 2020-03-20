@@ -10,7 +10,6 @@ class PatientsController < ApplicationController
 
   def create
     @patient = Patient.create(patient_params)
-    @patient.doctor = Doctor.find_by([:id])
     redirect_to patients_path
   end
 
