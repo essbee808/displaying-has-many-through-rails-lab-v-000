@@ -3,7 +3,7 @@
 <br>
 <%= @patient.appointments.each do |f| %>
   <ul>
-  <%= link_to f.doctor.name, doctor_path %><br>
+    <li><%= link_to f.doctor.name, doctor_path %><br>
   <%= f.convert_time %><br>
   <br>
 <% end %>
