@@ -2,11 +2,11 @@ class Appointment < ApplicationRecord
   belongs_to :doctor
   belongs_to :patient
 
-  def doctor_id=(name)
+  def doctor_name=(id)
     self.doctor = Doctor.find_or_create_by(name: name)
   end
 
-  def doctor_id
+  def doctor_name
     self.doctor ? self.doctor.name : nil
   end
 
