@@ -3,6 +3,7 @@ patients
 number of appointments they have -->
 <%= @patients.each do |f| %>
   <ul>
-  <%= f.name %><br>
+    <li><%= f.name %><br>
   <%= f.total_appointments %>
+  </ul>
 <% end %>
