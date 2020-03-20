@@ -2,5 +2,5 @@
 <h2><%= @doctor.department %></h2>
 <%= @doctor.appointments.each do |f| %>
   <%= f.patient_name %><br>
-  <%= f.
+  <%= f.patient.convert_time
 <% end %>
