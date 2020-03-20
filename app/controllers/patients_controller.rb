@@ -23,8 +23,4 @@ class PatientsController < ApplicationController
     params.require(:patient).permit(:name, :age)
   end
 
-  def doctors_params
-    params.require(:doctor).permit(:name)
-  end
-
 end
