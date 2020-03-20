@@ -9,7 +9,7 @@ class PatientsController < ApplicationController
   end
 
   def create
-    Patient.create(patient_params)
+    @patient = Patient.create(patient_params)
     redirect_to patients_path
   end
 
