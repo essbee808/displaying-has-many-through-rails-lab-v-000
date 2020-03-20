@@ -11,7 +11,8 @@ class AppointmentsController < ApplicationController
 
   def create
     @appointment = Appointment.create(appointment_params)
-    @appointment.doctor = Doctor.find_by(name: name)
+    @appointment.doctor = Doctor.find_or_create_by(name: name)
+    @appointment.
 
     if @appointment.save
       redirect_to @appointment
